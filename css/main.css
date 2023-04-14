@@ -572,12 +572,30 @@ video {
   height: 100vh;
 }
 
+.h-full{
+  height: 100%;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-\[25\.5rem\]{
   width: 25.5rem;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-screen{
+  width: 100vw;
+}
+
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @keyframes bounce{
@@ -632,6 +650,11 @@ video {
 .bg-gray-400{
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-5{
@@ -748,5 +771,11 @@ html {
 @media (min-width: 640px){
   .sm\:right-0{
     right: 0px;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:hidden{
+    display: none;
   }
 }
