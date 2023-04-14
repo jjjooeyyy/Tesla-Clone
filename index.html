@@ -10,31 +10,158 @@
 </head>
 
 <body>
-    <nav class="m-5">
-        <div class="container flex justify-between">
+    <header class="navbar">
             <!-- Logo -->
-            
-            <img src="/images/tesla.svg" alt="logo" class="h-6 mx-5">
-            
+            <a href="#model3"><img src="/images/tesla.svg" alt="logo" class="h-6"></a>
             <!-- Nav Links P1-->
-            <div class="flex-row space-x-4">
-            <a href="#">Model S</a>
-            <a href="#">Model 3</a>
-            <a href="#">Model X</a>
-            <a href="#">Model Y</a>
-            <a href="#">Power Wall</a>
-            <a href="#">Accessories</a>
+            <div class="flex-wrap">
+            <a href="#model3" class="navlink">Model 3</a>
+            <a href="#modelY" class="navlink">Model Y</a>
+            <a href="#modelS" class="navlink">Model S</a>
+            <a href="#solarWall" class="navlink">Power Wall</a>
+            <a href="#modelX" class="navlink">Model X</a>
+            <a href="#accesories" class="navlink">Accessories</a>
             </div>
             <!-- Nav Links P2-->
-            <div class="flex-row space-x-3 ">
-            <a href="#">Support</a>
-            <a href="#">Shop</a>
-            <a href="#">Account</a>
-            <a href="#">Menu</a>
+            <div class="">
+            <a href="#" class="navlink">Support</a>
+            <a href="#"class="navlink" >Shop</a>
+            <a href="#" class="navlink">Account</a>
+            <a href="#" class="navlink">Menu</a>
+            </div>
+
+            <!-- Small size menu -->
+            <div class="hidden sm:right-0">
+            <button>menu</button>
             </div>
         </div>
     </div>
-    </nav>
+</header>
+
+<section class="h-screen snap-mandatory snap-y overflow-y-scroll">
+    <!-- Model 3 -->
+    <section id="model3" class="product">
+    <img src="/images/Model3.jfif" alt="bg-model3" class="carBgCover">
+    <h1 class="carName">Model 3</h1>
+    <p class="carDescript">
+        2% Company Car Tax. 
+        <a href="#" class="pl-2 underline">Learn More</a>
+    </p>
+    <!-- Buttons -->
+    <div class="flex felx-row justify-center absolute top-[80%] w-full text-3xl">
+    <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
+        <p class="mx-auto">Explore Inventory</p>
+    </button>
+    <button class="flex mx-[5rem] bg-gray-400 p-5 rounded-xl w-[25.5rem]">
+        <p class="mx-auto">Custom Order</p>
+    </button>
+    </div>
+    <a href="#" class="text-center absolute w-full top-[90%] text-xl underline">Schedule a Test Drive</a>
+   <a href="#modelY">
+    <img src="/images/down.svg" class="h-20 w-full absolute top-[94%] block animate-bounce"/>
+    </a>
+</section>
+
+    <!-- Model Y -->
+    <section id="modelY" class="product">
+        <img src="/images/ModelY.jfif" alt="bg-modelY" class="carBgCover">
+        <h1 class="carName">Model Y</h1>
+        <p class="carDescript">
+            2% Company Car Tax. 
+            <a href="#" class="pl-2 underline">Learn More</a>
+        </p>
+            <!-- Buttons -->
+    <div class="flex felx-row justify-center absolute top-[80%] w-full text-3xl">
+        <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
+            <p class="mx-auto">Explore Inventory</p>
+        </button>
+        <button class="flex mx-[5rem] bg-gray-400 p-5 rounded-xl w-[25.5rem]">
+            <p class="mx-auto">Custom Order</p>
+        </button>
+        </div>
+        <a href="#" class="text-center absolute w-full top-[90%] text-xl underline">Schedule a Test Drive</a>
+       <a href="#modelS">
+        <img src="/images/down.svg" class="h-20 w-full absolute top-[94%] block animate-bounce"/>
+        </a>
+    </section>
+
+    <!-- Model S -->
+    <section id="modelS" class="product">
+        <img src="/images/ModelS.jfif" alt="bg-modelY" class="carBgCover">
+        <h1 class="carName">Model S</h1>
+        <p class="carDescript">
+            2% Company Car Tax. 
+            <a href="#" class="pl-2 underline">Learn More</a>
+        </p>
+            <!-- Buttons -->
+    <div class="flex felx-row justify-center absolute top-[80%] w-full text-3xl">
+        <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
+            <p class="mx-auto">Explore Inventory</p>
+        </button>
+        <button class="flex mx-[5rem] bg-gray-400 p-5 rounded-xl w-[25.5rem]">
+            <p class="mx-auto">Custom Order</p>
+        </button>
+        </div>
+        <a href="#" class="text-center absolute w-full top-[90%] text-xl underline">Schedule a Test Drive</a>
+       <a href="#solarWall">
+        <img src="/images/down.svg" class="h-20 w-full absolute top-[94%] block animate-bounce"/>
+        </a>
+    </section>
+
+    <!-- Solar Wall -->
+    <section id="solarWall" class="product">
+        <img src="/images/SolarPanels.jfif" alt="bg-modelY" class="carBgCover">
+        <h1 class="carName">Solar and Powerwall</h1>
+        <p class="carDescript">
+            Power Everything
+        </p>
+            <!-- Buttons -->
+    <div class="flex felx-row justify-center absolute top-[85%] w-full text-3xl">
+        <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
+            <p class="mx-auto">Learn More</p>
+        </button>
+        </div>
+       <a href="#modelX">
+        <img src="/images/down.svg" class="h-20 w-full absolute top-[94%] block animate-bounce"/>
+        </a>
+    </section>
+
+    <!-- Model X -->
+    <section id="modelX" class="product">
+        <img src="/images/ModelX.jfif" alt="bg-modelY" class="carBgCover">
+        <h1 class="carName">Model X</h1>
+        <p class="carDescript">
+            2% Company Car Tax. 
+            <a href="#" class="pl-2 underline">Learn More</a>
+        </p>
+            <!-- Buttons -->
+    <div class="flex felx-row justify-center absolute top-[80%] w-full text-3xl">
+        <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
+            <p class="mx-auto">Explore Inventory</p>
+        </button>
+        <button class="flex mx-[5rem] bg-gray-400 p-5 rounded-xl w-[25.5rem]">
+            <p class="mx-auto">Custom Order</p>
+        </button>
+        </div>
+        <a href="#" class="text-center absolute w-full top-[90%] text-xl underline">Schedule a Test Drive</a>
+       <a href="#accesories">
+        <img src="/images/down.svg" class="h-20 w-full absolute top-[94%] block animate-bounce"/>
+        </a>
+    </section>
+
+        <!-- Accesories -->
+        <section id="accesories" class="product">
+            <img src="/images/accessories.jfif" alt="bg-modelY" class="carBgCover">
+            <h1 class="carName">Accessories</h1>
+                <!-- Buttons -->
+        <div class="flex felx-row justify-center absolute top-[85%] w-full text-3xl">
+            <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
+                <p class="mx-auto">Shop Now</p>
+            </button>
+            </div>
+        </section>
+</section>
+
 </body>
 
 </html>
