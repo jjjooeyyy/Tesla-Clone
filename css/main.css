@@ -811,14 +811,21 @@ html {
   top: 12%;
   width: 100%;
   text-align: center;
-  font-size: 3.75rem;
+  font-size: 3rem;
   line-height: 1;
   font-weight: 500;
 }
 
+@media (min-width: 768px){
+  .carName{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
 .carDescript{
   position: absolute;
-  top: 20%;
+  top: 18%;
   width: 100%;
   text-align: center;
   font-size: 1.5rem;
@@ -826,16 +833,20 @@ html {
 }
 
 @media (min-width: 640px){
-  .sm\:top-\[10\%\]{
-    top: 10%;
-  }
-
   .sm\:h-10{
     height: 2.5rem;
   }
 
+  .sm\:h-screen{
+    height: 100vh;
+  }
+
   .sm\:w-full{
     width: 100%;
+  }
+
+  .sm\:w-screen{
+    width: 100vw;
   }
 
   .sm\:self-center{
