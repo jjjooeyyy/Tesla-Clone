@@ -12,9 +12,9 @@
 <body>
     <header class="navbar">
             <!-- Logo -->
-            <a href="#model3"><img src="/images/tesla.svg" alt="logo" class="h-6"></a>
+            <a href="#model3"><img src="/images/tesla.svg" alt="logo" class="h-6 sm:h-10 ml-2"></a>
             <!-- Nav Links P1-->
-            <div class="flex-wrap">
+            <div class="hidden xl:flex flex-row">
             <a href="#model3" class="navlink">Model 3</a>
             <a href="#modelY" class="navlink">Model Y</a>
             <a href="#modelS" class="navlink">Model S</a>
@@ -23,16 +23,31 @@
             <a href="#accesories" class="navlink">Accessories</a>
             </div>
             <!-- Nav Links P2-->
-            <div class="">
+            <div class="hidden xl:flex flex-row">
             <a href="#" class="navlink">Support</a>
             <a href="#"class="navlink" >Shop</a>
             <a href="#" class="navlink">Account</a>
             <a href="#" class="navlink">Menu</a>
             </div>
 
+            <!-- Mobile Menu -->
+            <div class="">
+                <div id="menu" class="xl:hidden absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-full sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="#model3" class="navlink">Model 3</a>
+                    <a href="#modelY" class="navlink">Model Y</a>
+                    <a href="#modelS" class="navlink">Model S</a>
+                    <a href="#solarWall" class="navlink">Power Wall</a>
+                    <a href="#modelX" class="navlink">Model X</a>
+                    <a href="#accesories" class="navlink">Accessories</a>
+                    <a href="#" class="navlink">Support</a>
+                    <a href="#"class="navlink" >Shop</a>
+                    <a href="#" class="navlink">Account</a> 
+                </div>
+            </div>
+
             <!-- Small size menu -->
-            <div class="hidden sm:right-0">
-            <button>menu</button>
+            <div class="mr-2 text-4xl xl:hidden">
+            <button id="menuBtn">menu</button>
             </div>
         </div>
     </div>
@@ -49,7 +64,7 @@
         <a href="#" class="pl-2 underline">Learn More</a>
     </p>
     <!-- Buttons -->
-    <div class="flex felx-row justify-center absolute top-[80%] w-full text-3xl">
+    <div class="flex flex-col space-y-6 justify-center items-center absolute top-[70%] w-full text-3xl md:flex-row md:top-[80%]">
     <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
         <p class="mx-auto">Explore Inventory</p>
     </button>
@@ -57,9 +72,9 @@
         <p class="mx-auto">Custom Order</p>
     </button>
     </div>
-    <a href="#" class="text-center absolute w-full top-[90%] text-xl underline">Schedule a Test Drive</a>
+    <a href="#" class="text-center absolute w-full top-[85%] text-xl underline md:top-[90%]">Schedule a Test Drive</a>
    <a href="#modelY">
-    <img src="/images/down.svg" class="downBtn h-20 w-full absolute top-[94%] block animate-bounce"/>
+    <img src="/images/down.svg" class="downBtn h-20 w-full absolute top-[90%] block animate-bounce md:top-[95%]"/>
     </a>
 
 </section>
@@ -74,7 +89,7 @@
             <a href="#" class="pl-2 underline">Learn More</a>
         </p>
             <!-- Buttons -->
-    <div class="flex felx-row justify-center absolute top-[80%] w-full text-3xl">
+    <div class="flex flex-col space-y-6 justify-center items-center absolute top-[70%] w-full text-3xl md:flex-row md:top-[80%]">
         <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
             <p class="mx-auto">Explore Inventory</p>
         </button>
@@ -82,9 +97,9 @@
             <p class="mx-auto">Custom Order</p>
         </button>
         </div>
-        <a href="#" class="text-center absolute w-full top-[90%] text-xl underline">Schedule a Test Drive</a>
+        <a href="#" class="text-center absolute w-full top-[85%] text-xl underline md:top-[90%]">Schedule a Test Drive</a>
        <a href="#modelS">
-        <img src="/images/down.svg" class="downBtn h-20 w-full absolute top-[94%] block animate-bounce"/>
+        <img src="/images/down.svg" class="downBtn h-20 w-full absolute top-[90%] block animate-bounce md:top-[95%]"/>
         </a>
     </section>
 
@@ -98,7 +113,7 @@
             <a href="#" class="pl-2 underline">Learn More</a>
         </p>
             <!-- Buttons -->
-    <div class="flex felx-row justify-center absolute top-[80%] w-full text-3xl">
+    <div class="flex flex-col space-y-6 justify-center items-center absolute top-[70%] w-full text-3xl md:flex-row md:top-[80%]">
         <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
             <p class="mx-auto">Explore Inventory</p>
         </button>
@@ -106,9 +121,9 @@
             <p class="mx-auto">Custom Order</p>
         </button>
         </div>
-        <a href="#" class="text-center absolute w-full top-[90%] text-xl underline">Schedule a Test Drive</a>
+        <a href="#" class="text-center absolute w-full top-[85%] text-xl underline md:top-[90%]">Schedule a Test Drive</a>
        <a href="#solarWall">
-        <img src="/images/down.svg" class="downBtn h-20 w-full absolute top-[94%] block animate-bounce"/>
+        <img src="/images/down.svg" class="downBtn h-20 w-full absolute top-[90%] block animate-bounce md:top-[95%]"/>
         </a>
     </section>
 
@@ -117,17 +132,17 @@
         <img src='/images/solar-sm.jfif' class="object-cover h-full w-full md:hidden">
         <img src="/images/SolarPanels.jfif" alt="bg-modelY" class="carBgCover">
         <h1 class="carName">Solar and Powerwall</h1>
-        <p class="carDescript">
+        <p class="carDescript pt-6">
             Power Everything
         </p>
             <!-- Buttons -->
-    <div class="flex felx-row justify-center absolute top-[85%] w-full text-3xl">
-        <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
+    <div class="flex flex-col space-y-6 justify-center items-center absolute top-[80%] w-full text-3xl md:flex-row md:top-[89%]">
+        <button class="flex mx-[5rem] bg-gray-400 text-white p-5 rounded-xl w-[25.5rem]">
             <p class="mx-auto">Learn More</p>
         </button>
         </div>
        <a href="#modelX">
-        <img src="/images/down.svg" class="downBtn h-20 w-full absolute top-[94%] block animate-bounce"/>
+        <img src="/images/down.svg" class="downBtn h-20 w-full absolute top-[90%] block animate-bounce md:top-[95%]"/>
         </a>
     </section>
 
@@ -141,7 +156,7 @@
             <a href="#" class="pl-2 underline">Learn More</a>
         </p>
             <!-- Buttons -->
-    <div class="flex felx-row justify-center absolute top-[80%] w-full text-3xl">
+    <div class="flex flex-col space-y-6 justify-center items-center absolute top-[70%] w-full text-3xl md:flex-row md:top-[80%]">
         <button class="flex mx-[5rem] bg-[#171a20] text-white p-5 rounded-xl w-[25.5rem]">
             <p class="mx-auto">Explore Inventory</p>
         </button>
@@ -149,9 +164,9 @@
             <p class="mx-auto">Custom Order</p>
         </button>
         </div>
-        <a href="#" class="text-center absolute w-full top-[90%] text-xl underline">Schedule a Test Drive</a>
+        <a href="#" class="text-center absolute w-full top-[85%] text-xl underline md:top-[90%]">Schedule a Test Drive</a>
        <a href="#accesories">
-        <img src="/images/down.svg" class="downBtn h-20 w-full absolute top-[94%] block animate-bounce"/>
+        <img src="/images/down.svg" class="downBtn h-20 w-full absolute top-[90%] block animate-bounce md:top-[95%]"/>
         </a>
     </section>
 
